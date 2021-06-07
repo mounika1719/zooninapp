@@ -1,0 +1,15 @@
+body {
+    background:
+    linear-gradient(
+      rgba(195, 218, 228, 0.596), 
+      rgba(147, 175, 212, 0.596)
+    ),
+    url(https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
