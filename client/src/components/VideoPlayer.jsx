@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { Grid, Typography, Paper, makeStyles } from '@material-ui/core';
-
 import { SocketContext } from '../Context';
-
 const useStyles = makeStyles((theme) => ({
   video: {
     width: '550px',
@@ -26,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
 const VideoPlayer = () => {
   const { name, callAccepted, myVideo, userVideo, callEnded, stream, call } = useContext(SocketContext);
   const classes = useStyles();
-
   return (
     <Grid container className={classes.gridContainer}>
       {stream && (
@@ -48,5 +45,4 @@ const VideoPlayer = () => {
     </Grid>
   );
 };
-
 export default VideoPlayer;
