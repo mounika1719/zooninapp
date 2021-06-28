@@ -3,9 +3,7 @@ import { Button, TextField, Grid, Typography, Container, Paper } from '@material
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Assignment, Phone, PhoneDisabled } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
-
 import { SocketContext } from '../Context';
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -41,7 +39,6 @@ const Sidebar = ({ children }) => {
   const { me, callAccepted, name, setName, callEnded, leaveCall, callUser } = useContext(SocketContext);
   const [idToCall, setIdToCall] = useState('');
   const classes = useStyles();
-
   return (
     <Container className={classes.container}>
       <Paper elevation={10} className={classes.paper}>
